@@ -1,8 +1,8 @@
 l_english:
  
  ge_change_castle_holding_interaction:0 "Change to Castle"
- ge_change_castle_holding_interaction_desc:0 "[target.GetProvince.GetName]will change to castle"
+ ge_change_castle_holding_interaction_desc:0 "[target.GetProvince.GetName] will change to castle"
  ge_change_city_holding_interaction:0 "Change to City"
- ge_change_city_holding_interaction_desc:0 "[target.GetProvince.GetName]will change to city"
+ ge_change_city_holding_interaction_desc:0 "[target.GetProvince.GetName] will change to city"
  ge_change_church_holding_interaction:0 "Change to Church"
- ge_change_church_holding_interaction_desc:0 "[target.GetProvince.GetName]will change to church"
+ ge_change_church_holding_interaction_desc:0 "[target.GetProvince.GetName] will change to church"
