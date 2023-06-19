@@ -1,0 +1,31 @@
+ge_add_slot = {
+    scope = character
+	saved_scopes = { gui_holding }
+    is_shown = {}
+	is_valid = {
+		scope:gui_holding.province_owner = { highest_held_title_tier >= tier_kingdom }
+		scope:gui_holding.building_slots <= 10
+		gold >= 100
+    }
+    effect = {
+		scope:gui_holding = {
+			add_province_modifier = extra_building_slot
+		}
+		remove_short_term_gold = 100
+    }
+}
+
+ge_remove_slot = {
+    scope = character
+	saved_scopes = { gui_holding }
+    is_shown = {}
+	is_valid = {
+		scope:gui_holding.province_owner = { highest_held_title_tier >= tier_kingdom }
+		scope:gui_holding.building_slots >= 3
+    }
+    effect = {
+		scope:gui_holding = {
+			# add_province_modifier = 
+		}
+    }
+}

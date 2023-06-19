@@ -1,0 +1,8 @@
+﻿l_simp_chinese:
+ 
+ ge_change_castle_holding_interaction:0 "城堡改制"
+ ge_change_castle_holding_interaction_desc:0 "[target.GetProvince.GetName]将成为城堡地产"
+ ge_change_city_holding_interaction:0 "城市改制"
+ ge_change_city_holding_interaction_desc:0 "[target.GetProvince.GetName]将成为城市地产"
+ ge_change_church_holding_interaction:0 "神殿改制"
+ ge_change_church_holding_interaction_desc:0 "[target.GetProvince.GetName]将成为神殿地产"

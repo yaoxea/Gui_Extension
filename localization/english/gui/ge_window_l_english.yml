@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ 
+ FORT:0 "[fort_level|E]:"
+ FORT_LEVEL:0 "@fort_icon![HoldingView.GetProvince.GetFortLevel]"
+ GARRISON:0 "[garrison|E]:"
+ GARRISON_SIZE:0 "@garrison_icon![HoldingView.GetCurrentGarrisonSize]"

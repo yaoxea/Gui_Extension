@@ -1,0 +1,23 @@
+types ButtonIcons
+{
+	type button_castle = button_icon
+	{
+		texture = "gfx/interface/icons/windows_county/castle_holding.dds"
+	}
+	type button_city = button_icon
+	{
+		texture = "gfx/interface/icons/windows_county/city_holding.dds"
+	}
+	type button_church = button_icon
+	{
+		texture = "gfx/interface/icons/windows_county/church_holding.dds"
+	}
+	type button_add_slot = button_icon
+	{
+		texture = "gfx/interface/icons/symbols/icon_plus.dds"
+	}
+	type button_remove_slot = button_icon
+	{
+		texture = "gfx/interface/icons/symbols/icon_minus.dds"
+	}
+}

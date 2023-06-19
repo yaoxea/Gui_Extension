@@ -1,0 +1,168 @@
+﻿ge_change_castle_holding_interaction = {#Change Castle Holding
+	category = interaction_category_uncategorized
+	hidden = yes
+	desc = ge_change_castle_holding_interaction_desc
+	target_type = title
+	target_filter = actor_domain_titles_including_leases
+	auto_accept = yes
+	is_shown = {
+	}
+	can_be_picked_title = {
+		scope:actor = {
+			highest_held_title_tier >= tier_duchy
+		}
+		scope:target = {
+			holder = scope:actor
+			trigger_if = {
+				limit = { tier <= tier_county }
+				title_province = {
+					NOT = { has_holding_type = tribal_holding }
+					NOT = { has_holding_type = castle_holding }
+				}
+			}
+		}
+	}
+	has_valid_target_showing_failures_only = {
+		scope:target = {
+			trigger_if = {
+				limit = { tier <= tier_county }
+				title_province = {
+					barony_controller = scope:actor
+					has_ongoing_construction = no
+				}
+			}
+		}
+	}
+	cost = {
+		gold = 500
+	}
+	on_accept = {
+		scope:actor = {
+			send_interface_toast = {
+				title = ge_change_castle_holding_interaction
+				right_icon = scope:actor
+				if = {
+					limit = { exists = scope:target.title_province }
+					scope:target.title_province = {
+						set_holding_type = castle_holding
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+}
+ge_change_city_holding_interaction = {#Change City Holding
+	category = interaction_category_uncategorized
+	hidden = yes
+	desc = ge_change_city_holding_interaction_desc
+	target_type = title
+	target_filter = actor_domain_titles_including_leases
+	auto_accept = yes
+	is_shown = {
+	}
+	can_be_picked_title = {
+		scope:actor = {
+			highest_held_title_tier >= tier_duchy
+		}
+		scope:target = {
+			holder = scope:actor
+			trigger_if = {
+				limit = { tier <= tier_county }
+				title_province = {
+					NOT = { has_holding_type = tribal_holding }
+					NOT = { has_holding_type = city_holding }
+				}
+			}
+		}
+	}
+	has_valid_target_showing_failures_only = {
+		scope:target = {
+			trigger_if = {
+				limit = { tier <= tier_county }
+				title_province = {
+					barony_controller = scope:actor
+					has_ongoing_construction = no
+				}
+			}
+		}
+	}
+	cost = {
+		gold = 500
+	}
+	on_accept = {
+		scope:actor = {
+			send_interface_toast = {
+				title = ge_change_city_holding_interaction
+				right_icon = scope:actor
+				if = {
+					limit = { exists = scope:target.title_province }
+					scope:target.title_province = {
+						set_holding_type = city_holding
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+}
+ge_change_church_holding_interaction = {#Change Church Holding
+	category = interaction_category_uncategorized
+	hidden = yes
+	desc = ge_change_church_holding_interaction_desc
+	target_type = title
+	target_filter = actor_domain_titles_including_leases
+	auto_accept = yes
+	is_shown = {
+	}
+	can_be_picked_title = {
+		scope:actor = {
+			highest_held_title_tier >= tier_duchy
+		}
+		scope:target = {
+			holder = scope:actor
+			trigger_if = {
+				limit = { tier <= tier_county }
+				title_province = {
+					NOT = { has_holding_type = tribal_holding }
+					NOT = { has_holding_type = church_holding }
+				}
+			}
+		}
+	}
+	has_valid_target_showing_failures_only = {
+		scope:target = {
+			trigger_if = {
+				limit = { tier <= tier_county }
+				title_province = {
+					barony_controller = scope:actor
+					has_ongoing_construction = no
+				}
+			}
+		}
+	}
+	cost = {
+		gold = 500
+	}
+	on_accept = {
+		scope:actor = {
+			send_interface_toast = {
+				title = ge_change_church_holding_interaction
+				right_icon = scope:actor
+				if = {
+					limit = { exists = scope:target.title_province }
+					scope:target.title_province = {
+						set_holding_type = church_holding
+					}
+				}
+			}
+		}
+	}
+	ai_will_do = {
+		base = 0
+	}
+}
