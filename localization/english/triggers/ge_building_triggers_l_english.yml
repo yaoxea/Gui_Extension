@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
  BUILDING_SLOTS_LESS_OR_EQUAL_TRIGGER_GLOBAL:0 "Has $NUM|V$ building slots"
  BUILDING_SLOTS_LESS_OR_EQUAL_TRIGGER_THIRD:0 "Has $NUM|V$ building slots"

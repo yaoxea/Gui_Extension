@@ -1310,21 +1310,48 @@ window = {
 			background = {
 				using = Background_Area_Dark
 			}
-			flowcontainer = {#Normal_buildings
-				name = "normal_building"
-				parentanchor = left|vcenter
-				ignoreinvisible = yes
-				flowcontainer = {#County_buildings
-					name = "buildings_grid"
-					datamodel = "[HoldingView.GetBuildings]"
-					ignoreinvisible = yes
-					righttoleft = yes
-					item = {
-						widget_building_item = {}
+			scrollarea = {#Scroll_for_normal_buildings
+				size = { 550 75 }#55+12+8
+				parentanchor = center
+				maximumsize = { 550 75 }
+				autoresizescrollarea = yes
+				scrollbar_horizontal = {#Scroll_policy
+					using = Scrollbar_Horizontal
+				}
+				scrollwidget = {#Scroll_area
+					flowcontainer = {#Normal_buildings
+						name = "normal_building"
+						margin_bottom = 15#Space_for_scroll_bar
+						ignoreinvisible = yes
+						parentanchor = left|vcenter
+						flowcontainer = {#County_buildings
+							name = "buildings_grid"
+							datamodel = "[HoldingView.GetBuildings]"
+							righttoleft = yes
+							ignoreinvisible = yes
+							item = {
+								widget_building_item = {}
+							}
+						}
 					}
 				}
 			}
-			expand = {}
+			# Below is original version
+			# flowcontainer = {
+				# name = "normal_building"
+				# parentanchor = left|vcenter
+				# ignoreinvisible = yes
+				# flowcontainer = {
+					# name = "buildings_grid"
+					# datamodel = "[HoldingView.GetBuildings]"
+					# ignoreinvisible = yes
+					# righttoleft = yes
+					# item = {
+						# widget_building_item = {}
+					# }
+				# }
+			# }
+			# expand = {}
 		}
 	}
 }

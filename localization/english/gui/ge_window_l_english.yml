@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  
  FORT:0 "[fort_level|E]:"
  FORT_LEVEL:0 "@fort_icon![HoldingView.GetProvince.GetFortLevel]"

@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  
  ge_change_castle_holding_interaction:0 "Change to Castle"
  ge_change_castle_holding_interaction_desc:0 "[target.GetProvince.GetName] will change to castle"

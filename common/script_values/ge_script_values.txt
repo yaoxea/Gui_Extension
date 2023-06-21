@@ -1,0 +1,27 @@
+ge_add_slot_gold = {
+	value = 100
+	if = {
+		limit = {
+			scope:gui_holding.building_slots >= 7
+		}
+		multiply = 2#200
+	}
+	if = {
+		limit = {
+			scope:gui_holding.building_slots >= 11
+		}
+		multiply = 2.5#500
+	}
+	if = {
+		limit = {
+			scope:gui_holding.building_slots >= 21
+		}
+		multiply = 2#1000
+	}
+	if = {
+		limit = {
+			scope:gui_holding.building_slots >= 24
+		}
+		multiply = 2#2000
+	}
+}
