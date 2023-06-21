@@ -5,8 +5,7 @@
 	target_type = title
 	target_filter = actor_domain_titles_including_leases
 	auto_accept = yes
-	is_shown = {
-	}
+	is_shown = {}
 	can_be_picked_title = {
 		scope:actor = {
 			highest_held_title_tier >= tier_duchy
@@ -61,8 +60,7 @@ ge_change_city_holding_interaction = {#Change City Holding
 	target_type = title
 	target_filter = actor_domain_titles_including_leases
 	auto_accept = yes
-	is_shown = {
-	}
+	is_shown = {}
 	can_be_picked_title = {
 		scope:actor = {
 			highest_held_title_tier >= tier_duchy
@@ -117,8 +115,7 @@ ge_change_church_holding_interaction = {#Change Church Holding
 	target_type = title
 	target_filter = actor_domain_titles_including_leases
 	auto_accept = yes
-	is_shown = {
-	}
+	is_shown = {}
 	can_be_picked_title = {
 		scope:actor = {
 			highest_held_title_tier >= tier_duchy
